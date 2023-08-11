@@ -15,15 +15,15 @@ namespace jogoRpg
         public int Xp { get; set; }
         public int AtaqueBase { get; set; }
 
-        public Heroi(String nome)
+        public Heroi(string nome)
         {
             Random Aleatorio = new Random();
             this.Nome = nome;
             this.Nivel = 1;
             this.Vida = 10;
-            this.Ataque = AtaqueBase + Nivel;
+            this.AtaqueBase = Aleatorio.Next(1, 50) + Nivel;
+            this.Ataque = AtaqueBase;
             this.Xp = 0;
-            this.AtaqueBase = Aleatorio.Next(1, 50);
 
         }
         public void GanharXp(int experiencia)

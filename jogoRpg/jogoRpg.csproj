@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Heroi.cs" />
     <Compile Include="Jogo.cs" />
+    <Compile Include="Monstro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
